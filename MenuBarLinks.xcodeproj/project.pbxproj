@@ -13,6 +13,11 @@
 		F626622129A1848700BA3ADD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F626622029A1848700BA3ADD /* Preview Assets.xcassets */; };
 		F626622329A1848700BA3ADD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626622229A1848700BA3ADD /* Persistence.swift */; };
 		F626622629A1848700BA3ADD /* MenuBarLinks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F626622429A1848700BA3ADD /* MenuBarLinks.xcdatamodeld */; };
+		F626622F29A1871800BA3ADD /* QLLink+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626622D29A1871800BA3ADD /* QLLink+CoreDataClass.swift */; };
+		F626623029A1871800BA3ADD /* QLLink+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626622E29A1871800BA3ADD /* QLLink+CoreDataProperties.swift */; };
+		F626623629A1886500BA3ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626623529A1886500BA3ADD /* AppDelegate.swift */; };
+		F626623829A1896200BA3ADD /* PopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626623729A1896200BA3ADD /* PopoverView.swift */; };
+		F626623A29A18A7200BA3ADD /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F626623929A18A7200BA3ADD /* StatusBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		F626622229A1848700BA3ADD /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F626622529A1848700BA3ADD /* MenuBarLinks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MenuBarLinks.xcdatamodel; sourceTree = "<group>"; };
 		F626622729A1848700BA3ADD /* MenuBarLinks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenuBarLinks.entitlements; sourceTree = "<group>"; };
+		F626622D29A1871800BA3ADD /* QLLink+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QLLink+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F626622E29A1871800BA3ADD /* QLLink+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QLLink+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F626623529A1886500BA3ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F626623729A1896200BA3ADD /* PopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverView.swift; sourceTree = "<group>"; };
+		F626623929A18A7200BA3ADD /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,13 @@
 		F626621829A1848500BA3ADD /* MenuBarLinks */ = {
 			isa = PBXGroup;
 			children = (
+				F626623429A1883400BA3ADD /* Menubar */,
+				F626623129A1873000BA3ADD /* Data */,
 				F626621929A1848500BA3ADD /* MenuBarLinksApp.swift */,
 				F626621B29A1848500BA3ADD /* ContentView.swift */,
+				F626623729A1896200BA3ADD /* PopoverView.swift */,
 				F626621D29A1848700BA3ADD /* Assets.xcassets */,
-				F626622229A1848700BA3ADD /* Persistence.swift */,
 				F626622729A1848700BA3ADD /* MenuBarLinks.entitlements */,
-				F626622429A1848700BA3ADD /* MenuBarLinks.xcdatamodeld */,
 				F626621F29A1848700BA3ADD /* Preview Content */,
 			);
 			path = MenuBarLinks;
@@ -73,6 +84,26 @@
 				F626622029A1848700BA3ADD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F626623129A1873000BA3ADD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F626622429A1848700BA3ADD /* MenuBarLinks.xcdatamodeld */,
+				F626622229A1848700BA3ADD /* Persistence.swift */,
+				F626622D29A1871800BA3ADD /* QLLink+CoreDataClass.swift */,
+				F626622E29A1871800BA3ADD /* QLLink+CoreDataProperties.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F626623429A1883400BA3ADD /* Menubar */ = {
+			isa = PBXGroup;
+			children = (
+				F626623529A1886500BA3ADD /* AppDelegate.swift */,
+				F626623929A18A7200BA3ADD /* StatusBarController.swift */,
+			);
+			path = Menubar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +178,13 @@
 			files = (
 				F626622629A1848700BA3ADD /* MenuBarLinks.xcdatamodeld in Sources */,
 				F626622329A1848700BA3ADD /* Persistence.swift in Sources */,
+				F626623829A1896200BA3ADD /* PopoverView.swift in Sources */,
+				F626623029A1871800BA3ADD /* QLLink+CoreDataProperties.swift in Sources */,
+				F626623A29A18A7200BA3ADD /* StatusBarController.swift in Sources */,
 				F626621C29A1848500BA3ADD /* ContentView.swift in Sources */,
+				F626623629A1886500BA3ADD /* AppDelegate.swift in Sources */,
 				F626621A29A1848500BA3ADD /* MenuBarLinksApp.swift in Sources */,
+				F626622F29A1871800BA3ADD /* QLLink+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct MenuBarLinksApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
